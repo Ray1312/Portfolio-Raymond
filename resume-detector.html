@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#242829" />
+  <meta name="description" content="Resume Detector: an NLP group project with model research, evaluation, testing, and validation by Raymond Timothy." />
+  <title>Resume Detector | Raymond Timothy</title>
+  <link rel="stylesheet" href="styles.css?v=20260926-previews" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="wordmark" href="./#home" aria-label="Raymond Timothy, home" title="Home"><img class="home-icon" src="assets/house.svg" width="24" height="24" alt="" /><span>Portfolio</span></a>
+    <a class="text-link" href="./#projects"><span aria-hidden="true">&larr;</span> All projects</a>
+  </div></header>
+  <main id="main" class="wrap project-page">
+    <section class="intro" aria-labelledby="project-title">
+      <p class="intro-label">Group project &middot; Natural Language Processing</p>
+      <h1 id="project-title">Resume Detector</h1>
+      <p class="intro-copy">An NLP-based system for matching resumes with suitable job categories through semantic text embeddings and similarity ranking.</p>
+      <div class="project-actions">
+        <a class="button secondary" href="https://nlp-project-taupe.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">&nearr;</span></a>
+        <a class="text-link" href="https://github.com/berubob/Natural-Language-Processing-Project-Binus" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span></a>
+      </div>
+      <figure>
+        <a class="project-screenshot" href="assets/resume-detector-results.png" target="_blank" rel="noopener" aria-label="View full-size Resume Detector screenshot"><img src="assets/resume-detector-results.png" width="1790" height="911" alt="Resume Detector displaying an accountant test resume and ranked job-category similarity scores, with Accountant as the best match" /></a>
+        <figcaption class="section-note">Example matching results for an accountant test resume, with Accountant ranked as the best match.</figcaption>
+      </figure>
+    </section>
+    <div class="portfolio-grid">
+      <section class="section" aria-labelledby="role-title">
+        <h2 id="role-title">My Role &amp; Contributions</h2>
+        <p class="section-copy">I focused on model research and evaluation, followed by testing and validation after the team completed development.</p>
+        <dl class="skills-list">
+          <div><dt>Model research</dt><dd>Investigated candidate NLP models and considered their suitability for the resume data and the project's matching task.</dd></div>
+          <div><dt>Evaluation</dt><dd>Evaluated model suitability and reviewed matching outputs to assess whether the results aligned with the expected job categories.</dd></div>
+          <div><dt>Testing &amp; validation</dt><dd>Tested the completed system and checked its resume-to-category matches to identify unexpected results.</dd></div>
+        </dl>
+      </section>
+      <section class="section" aria-labelledby="stack-title">
+        <h2 id="stack-title">Model &amp; Technologies</h2>
+        <p class="section-note">NLP pipeline documented in the team's final report.</p>
+        <dl class="skills-list">
+          <div><dt>Language</dt><dd>Python</dd></div>
+          <div><dt>Embeddings</dt><dd>Sentence-BERT / Sentence-Transformers, using all-MiniLM-L6-v2 to produce 384-dimensional text embeddings.</dd></div>
+          <div><dt>Text processing</dt><dd>PyMuPDF for PDF text extraction and regular expressions for text cleaning.</dd></div>
+          <div><dt>Matching</dt><dd>Cosine similarity between resume and job-category embeddings.</dd></div>
+          <div><dt>Evaluation tools</dt><dd>scikit-learn; precision, recall, F1-score, and ranking evaluation.</dd></div>
+        </dl>
+      </section>
+      <section class="section" aria-labelledby="approach-title">
+        <h2 id="approach-title">Problem &amp; Approach</h2>
+        <p class="section-copy">Resumes describe similar skills in different ways, making exact keyword matching restrictive. The team's system extracts and cleans resume text, creates semantic embeddings, and ranks job categories by cosine similarity.</p>
+        <p class="section-copy">The report describes evaluation using a public resume dataset covering 24 job categories. Performance varied across categories, with class imbalance and broad labels identified as important limitations.</p>
+      </section>
+      <section class="section" aria-labelledby="learning-title">
+        <h2 id="learning-title">What I Learned</h2>
+        <p class="section-copy">Selecting a model requires understanding both the task and the data. Working with varied resumes helped me appreciate the challenges of generalization, including overfitting and underfitting, and why matching outputs need careful testing rather than relying on a single score.</p>
+        <p class="section-note">Academic classification prototype; category matches do not establish an applicant's suitability for hiring.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><span>Raymond Timothy</span><a href="./#projects">Back to projects <span aria-hidden="true">&rarr;</span></a></footer>
+</body>
+</html>

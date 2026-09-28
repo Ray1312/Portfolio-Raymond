@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#242829" />
+  <meta name="description" content="Smart Fridge AI: a computer vision group project, with research, planning, and documentation contributions by Raymond Timothy." />
+  <title>Smart Fridge AI | Raymond Timothy</title>
+  <link rel="stylesheet" href="styles.css?v=20260926-previews" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="wordmark" href="./#home" aria-label="Raymond Timothy, home" title="Home"><img class="home-icon" src="assets/house.svg" width="24" height="24" alt="" /><span>Portfolio</span></a>
+    <a class="text-link" href="./#projects"><span aria-hidden="true">&larr;</span> All projects</a>
+  </div></header>
+  <main id="main" class="wrap project-page">
+    <section class="intro" aria-labelledby="project-title">
+      <p class="intro-label">Group project &middot; Computer Vision</p>
+      <h1 id="project-title">Smart Fridge AI</h1>
+      <p class="intro-copy">A camera-based food inventory system that uses YOLOv8 and OpenCV, with detection results connected to a database and web dashboard for real-time monitoring.</p>
+      <div class="project-actions">
+        <a class="text-link" href="https://github.com/FireClow/smart-fridge-ai" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span></a>
+      </div>
+    </section>
+    <div class="portfolio-grid">
+      <section class="section" aria-labelledby="role-title">
+        <h2 id="role-title">My Role &amp; Contributions</h2>
+        <p class="section-copy">My primary responsibilities were project research, planning, and documentation. The software implementation was handled by another team member.</p>
+        <dl class="skills-list">
+          <div><dt>Idea &amp; feasibility</dt><dd>Helped develop and recommend the initial project idea by considering its feasibility, advantages, limitations, and potential applications.</dd></div>
+          <div><dt>Supporting research</dt><dd>Researched supporting references to inform the project concept and report.</dd></div>
+          <div><dt>Documentation</dt><dd>Prepared and reviewed project documentation, and helped coordinate and finalize the team report.</dd></div>
+          <div><dt>Presentation</dt><dd>Organized presentation materials to communicate the project's approach and results.</dd></div>
+        </dl>
+      </section>
+      <section class="section" aria-labelledby="stack-title">
+        <h2 id="stack-title">System &amp; Technologies</h2>
+        <p class="section-note">Team implementation documented in the final project report.</p>
+        <dl class="skills-list">
+          <div><dt>Object detection</dt><dd>Python and Ultralytics YOLOv8 for detecting food items from camera input; Roboflow for dataset preparation.</dd></div>
+          <div><dt>Computer vision</dt><dd>OpenCV: Harris Corner Detection, Shi-Tomasi Corner Detection, ORB feature extraction, and Optical Flow.</dd></div>
+          <div><dt>Backend</dt><dd>FastAPI for connecting detection results with the inventory system.</dd></div>
+          <div><dt>Database</dt><dd>Supabase (PostgreSQL) for inventory records and detection logs.</dd></div>
+          <div><dt>Dashboard</dt><dd>React and Tailwind CSS for web-based inventory monitoring.</dd></div>
+        </dl>
+      </section>
+      <section class="section" aria-labelledby="approach-title">
+        <h2 id="approach-title">Problem &amp; Approach</h2>
+        <p class="section-copy">Keeping track of refrigerator contents manually can be inconvenient. The team's prototype explores camera-based detection as a way to maintain a visible inventory of food items.</p>
+        <p class="section-copy">Camera frames are processed by the detection system, and item counts are passed through the backend to the database. The web dashboard presents the inventory and detection results for monitoring.</p>
+      </section>
+      <section class="section" aria-labelledby="limitations-title">
+        <h2 id="limitations-title">Challenges &amp; Limitations</h2>
+        <p class="section-copy">Lighting, camera placement, and partially hidden items can affect detection. Recognition is also limited by the food categories represented in the training data. The prototype monitors visible inventory; it does not determine food freshness or expiry.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><span>Raymond Timothy</span><a href="./#projects">Back to projects <span aria-hidden="true">&rarr;</span></a></footer>
+</body>
+</html>
