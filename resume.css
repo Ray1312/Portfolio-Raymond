@@ -1,3 +1,4 @@
+.resume-page { --surface:var(--secondary); --green:var(--text); --burgundy:var(--accent); }
 .resume-actions { display:flex; align-items:center; gap:28px; }
 .resume-actions .button { white-space:nowrap; }
 .resume-document { width:min(850px,calc(100% - 48px)); margin:36px auto 56px; padding:44px 52px; background:var(--surface); border:1px solid var(--line); font-size:15px; line-height:1.6; }
@@ -37,7 +38,7 @@
   .resume-entry-head > span { display:block; margin-top:3px; }
 }
 @media print {
-  :root { color-scheme:light; --ink:#222; --muted:#444; --line:#bbb; --accent:#405b46; }
+  :root { color-scheme:light; --ink:#222; --text:#222; --soft:#444; --muted:#444; --line:#bbb; --accent:#222; }
   @page { size:A4; margin:14mm; }
   .resume-page { background:#fff; color:#222; }
   .resume-toolbar, .resume-page .skip-link { display:none; }

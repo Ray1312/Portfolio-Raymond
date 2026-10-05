@@ -2,26 +2,25 @@
 
 A lightweight, responsive portfolio for internship applications. It uses plain HTML, CSS, and JavaScript, so there is no build step or package installation.
 
-## Personalize before sharing
+## Content and design
 
-All sample details are intentionally labelled. Edit `index.html` and `resume.html` to replace:
+The homepage uses a dark graphite palette with restrained amber highlights, local Manrope and Inter fonts, a subtle animated system diagram, and a featured IHSG project followed by four group projects. Motion respects the browser's reduced-motion preference. Original project screenshots retain their own application colors.
 
-1. Raymond's name, city, university, graduation year, and contact links are already filled in.
-2. The GearShare and FloodGuard details. Keep the problem, role, challenge, solution, and stack fields. Replace the link placeholder text with GitHub and demo anchors.
-3. The skills list, which is still illustrative. Experience is intentionally empty because there is no formal role to list yet.
-4. The print-friendly resume content in `resume.html`.
+Edit `index.html` to update profile information, skills, project summaries, screenshots, and links. Technical explanations and contributions are in the five project detail HTML files. Keep group-project contributions distinct from the complete application's capabilities.
 
-Search for `to add`, `Add`, and `Details to add` to find remaining placeholders. The workbench image is illustrative and does not depict you or your projects.
+The resume links currently point to the supplied Canva URL. Replace both homepage links with a PDF in `assets/` when one is available. The old `resume.html` is not linked from the homepage.
+
+Project screenshots are actual supplied images; the Smart Fridge architecture graphic is a diagram, not an application screenshot. Fonts and social icons are stored locally, so the portfolio needs no API keys, credentials, or external font service.
 
 ## Preview locally
 
 Open `index.html` directly in a browser, or run a local static server from this folder:
 
 ```powershell
-python -m http.server 4173
+python -m http.server 4174 --bind 127.0.0.1
 ```
 
-Then open `http://localhost:4173`.
+Then open `http://127.0.0.1:4174`.
 
 ## Deploy with GitHub and Vercel
 
@@ -30,4 +29,4 @@ Then open `http://localhost:4173`.
 3. Select **Other** as the framework preset. Leave build command and output directory blank.
 4. Deploy. Future pushes to your main branch will create new deployments.
 
-The `vercel.json` file enables clean URLs, so `/resume` opens the resume page.
+The `vercel.json` file enables clean URLs for the project detail pages.
